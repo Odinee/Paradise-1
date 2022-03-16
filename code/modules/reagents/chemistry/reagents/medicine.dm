@@ -638,6 +638,7 @@
 				E.heal_internal_damage(1)
 			var/obj/item/organ/internal/ears/ears = C.get_int_organ(/obj/item/organ/internal/ears)
 			if(istype(ears))
+				ears.heal_internal_damage(1)
 				ears.AdjustEarDamage(-1)
 				if(ears.ear_damage < 25 && prob(30))
 					ears.deaf = 0
